@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
     //     }
     // }
 
-    spreadsheetData[row][col] = { value: displayValue, style };
+    //spreadsheetData[row][col] = { value: displayValue, style };
     io.emit('cellUpdated', { row, col, value: displayValue, style }); // Notify all clients
 });
 
